@@ -10,13 +10,21 @@
 </head>
 <body>
       <section class="main">
-        <nav>
+        <nav id="navbar">
             <img class="logo" src="src/img/ash.png" alt="LOGO"/>
+            <svg class="hambur" onclick="showMenu()" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+            <ul class="bignav">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#interests">interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu" id="menu">
             <ul>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#interests">interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            </div>
         </nav>
         <div class="container">
             <div class="main-text">
@@ -75,6 +83,25 @@
           <p>meashishgopalika@gmail.com</p>
       </footer>
 
-      <script src="src/index.js"></script>
+      <script>
+          var count=0;
+            function showMenu()
+            {
+                console.log(count);
+                if(count%2==0)
+                {
+                    document.getElementById("menu").style.display="flex";
+                    document.getElementById("navbar").style.display="flex";
+                    document.getElementById("navbar").style.flexDirection="column";
+                    document.getElementById("navbar").style.backgroundColor="rgb(156, 99, 52)";
+                }
+                else
+                {
+                    document.getElementById("menu").style.display="none";
+                    document.getElementById("navbar").style.backgroundColor="black";
+                }
+                count++;
+            }
+       </script>
 </body>
 </html>

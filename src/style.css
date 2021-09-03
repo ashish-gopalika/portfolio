@@ -17,6 +17,10 @@ section{
     border: solid black 1px;
 }
 
+.hambur{
+    display: none;
+}
+
 .main{
     background-color: black;
     height: 100pv;
@@ -125,6 +129,10 @@ p{
     text-align: center;
 }
 
+.menu{
+    display: none;
+}
+
 .image{
     width: 150px;
     height: 200px;
@@ -179,7 +187,51 @@ a{
     .project-container{
         display: flex;
         flex-wrap: wrap;
+
     }
+    .bignav{
+        display: none;
+    }
+
+    .sub-section{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .project-main{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .hambur{
+        display: block;
+        padding: 10px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu ul{
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu ul{
+        justify-content: space-between;
+        font-size: 25px;
+    } 
 }
 
 
