@@ -1,2 +1,2 @@
 # portfolio
-I'm Ashish Kumar Gopalika and This is about me.
+I'm Ashish Kumar Gopalika and This is about my basic portfolio.
